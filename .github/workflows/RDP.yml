@@ -14,7 +14,7 @@ jobs:
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/tahaluindo/RDP2023/main/resources/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/tahaluindo/RDP2023/main/resources/wallpaper.jpg -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/tahaluindo/RDP2023/main/resources/loop.ps1 -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/tahaluindo/RDP2023/main/resources/loop.ps1 -OutFile loop.ps1
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect via ngrok.
